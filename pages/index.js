@@ -7,8 +7,9 @@ import MediumCard from '../components/MediumCard';
 import SmallCard from '../components/SmallCard';
 
 export default function Home({ exploreData, cardsData }) {
+
   return (
-    <div className="">
+    < div className="" >
       <Head>
         <title>Airbnb</title>
         <link rel="icon" href="/favicon.ico" />
@@ -51,7 +52,7 @@ export default function Home({ exploreData, cardsData }) {
         />
       </main>
       <Footer />
-    </div>
+    </div >
   )
 }
 
@@ -72,6 +73,7 @@ export async function getStaticProps() {
     props: {
       exploreData,
       cardsData,
+      // nprintData,
     }
   }
 }
